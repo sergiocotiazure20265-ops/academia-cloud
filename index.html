@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Academia Cloud</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container navegacao">
+      <a class="marca" href="index.html">Academia Cloud</a>
+      <span>Laboratório Azure</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="apresentacao">
+      <span class="selo">HTML + CSS + JavaScript</span>
+
+      <h1>Seu próximo passo começa na nuvem.</h1>
+
+      <p>
+        Uma vitrine de cursos publicada como site estático
+        no Azure Storage.
+      </p>
+
+      <a class="botao" href="#catalogo">Explorar cursos</a>
+    </section>
+
+    <section id="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo">Catálogo de cursos</h2>
+
+      <label for="busca">Pesquisar por nome ou tecnologia</label>
+
+      <input
+        id="busca"
+        type="search"
+        placeholder="Ex.: Azure, Docker ou JavaScript"
+        autocomplete="off"
+      >
+
+      <p id="resultado" class="muted" aria-live="polite"></p>
+
+      <div id="lista-cursos" class="grade"></div>
+
+      <noscript>
+        Ative o JavaScript para visualizar o catálogo de cursos.
+      </noscript>
+    </section>
+
+    <section class="informacoes">
+      <h2>Sobre este laboratório</h2>
+
+      <p>
+        Os cursos são exemplos fictícios. A pesquisa acontece
+        no navegador e não utiliza banco de dados.
+      </p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Academia Cloud — Projeto didático</p>
+      <p>Versão <strong id="versao">1.0</strong></p>
+    </div>
+  </footer>
+
+</body>
+</html>

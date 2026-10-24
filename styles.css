@@ -1,0 +1,153 @@
+:root {
+  --azul: #0759c7;
+  --azul-escuro: #103058;
+  --fundo: #f3f6fb;
+  --texto: #1c293d;
+  --cinza: #56657a;
+  --borda: #d7e0eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.topo {
+  background: white;
+  border-bottom: 1px solid var(--borda);
+}
+
+.navegacao {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 0;
+}
+
+.marca {
+  color: var(--azul);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.apresentacao {
+  padding: 64px 0;
+}
+
+.selo {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #dfebff;
+  color: var(--azul);
+  font-weight: bold;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 20px 0;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.12;
+  color: var(--azul-escuro);
+}
+
+.apresentacao p {
+  max-width: 620px;
+  font-size: 19px;
+  color: var(--cinza);
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: var(--azul);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+}
+
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #bf7600;
+  outline-offset: 3px;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgb(16 48 88 / 5%);
+}
+
+.card h3 {
+  color: var(--azul-escuro);
+  margin-top: 12px;
+}
+
+.categoria {
+  color: var(--azul);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.muted {
+  color: var(--cinza);
+}
+
+.informacoes {
+  padding: 42px 0;
+}
+
+.rodape {
+  background: var(--azul-escuro);
+  color: white;
+  padding: 24px 0;
+}
+
+.rodape p {
+  margin: 4px 0;
+}
